@@ -106,3 +106,16 @@ section{
     width: 100%;
 }
 /* END SECTION STYLE */
+
+/* TABLET SCREEN SIZES */
+@media only screen and (min-width: 550px){
+    .main-container{
+        padding: 20px;
+    }
+
+    section{
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+/* END TABLET SCREEN SIZES */
