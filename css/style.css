@@ -69,13 +69,11 @@ section{
     font-weight: 700;
     line-height: 50px;
     /* margin-bottom: 10px; */
-    cursor: pointer;
 }
 
 .desc-content{
     font-weight: 400;
     font-size: 18px;
-    cursor: pointer;
     letter-spacing: 1px;
 }
 
@@ -99,6 +97,7 @@ section{
     font-weight: 600;
     letter-spacing: 1px;
     transition: all 1s ease-in-out ;
+    cursor: pointer;
 }
 
 .course-button:hover{
@@ -114,6 +113,7 @@ section{
     color: var(--font-color);
     font-size: 16px;
     font-family: var(--font);
+    cursor: pointer;
 }
 
 .saly-image{
