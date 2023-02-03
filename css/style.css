@@ -6,6 +6,20 @@ body{
     grid-template-columns: 1fr;
     justify-content: center;
     width: 100vw;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #FF00C7;
+    
 }
 
 .main-container{
@@ -54,7 +68,7 @@ section{
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     cursor: pointer;
 }
 
@@ -111,11 +125,79 @@ section{
 @media only screen and (min-width: 550px){
     .main-container{
         padding: 20px;
+        border-bottom-right-radius: 200px;
+    }
+
+    .description-block{
+        margin-top: 50px;
     }
 
     section{
         align-items: center;
-        margin-top: 10px;
     }
 }
 /* END TABLET SCREEN SIZES */
+
+/* DESKTOP SCREEN SIZE */
+@media only screen and (min-width: 1024px){
+    .main-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 112px;
+        border-bottom-right-radius: 200px;
+    }
+
+    /* header */
+    header{
+        padding: 38px 54px 0 60px;
+    }
+
+    .nav{
+        display: flex;
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .nav li{
+        cursor: pointer;
+    }
+
+    .reg-list{
+        display: flex;
+        gap: 30px;
+    }
+
+    .reg-list li{
+        cursor: pointer;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    /* section */
+    .desc-title{
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .desc-content{
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .description-block{
+        display: grid;
+        justify-content: end;
+        gap: 10px;
+    }
+
+    .img-block{
+        margin-bottom: 112px;
+    }
+} 
+/* END DESKTOP SCREEN SIZE */
