@@ -7,6 +7,7 @@ body{
     justify-content: center;
     width: 100vw;
     overflow-x: hidden;
+    font-family: var(--font);
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +27,6 @@ body{
     width: 100%;
     background: var(--body-color);
     padding: 10px;
-    font-family: var(--font);
     color: var(--font-color);
 }
 
@@ -121,6 +121,37 @@ section{
 }
 /* END SECTION STYLE */
 
+/* COMPANY AND PARTNERS SECTION STYLE */
+.partners-section{
+    margin: 42px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* change 40.22px */
+    width: 100%;
+}
+
+.partners-section h1{
+    font-size: 25px; /* change 60px desk */
+    font-weight: bold;
+    line-height: 60px;
+    opacity: 0.6;
+    color: #464747;
+    text-align: center;
+}
+
+.company-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.company-container svg{
+    cursor: pointer;
+}
+/* END COMPANY AND PARTNERS SECTION */
+
 /* TABLET SCREEN SIZES */
 @media only screen and (min-width: 550px){
     .main-container{
@@ -179,7 +210,7 @@ section{
         display: none;
     }
 
-    /* section */
+    /* main section */
     .desc-title{
         font-size: 60px;
         line-height: 80px;
@@ -198,6 +229,20 @@ section{
 
     .img-block{
         margin-bottom: 112px;
+    }
+
+    /* company section */
+    .partners-section{
+        gap: 40.22px;
+    }
+
+    .partners-section h1{
+        font-size: 60px;
+    }
+
+    .company-container{
+        flex-direction: row;
+        gap: 80px;
     }
 } 
 /* END DESKTOP SCREEN SIZE */
