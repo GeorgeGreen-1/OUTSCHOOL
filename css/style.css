@@ -127,12 +127,12 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px; /* change 40.22px */
+    gap: 25px; 
     width: 100%;
 }
 
 .partners-section h1{
-    font-size: 25px; /* change 60px desk */
+    font-size: 25px; 
     font-weight: bold;
     line-height: 60px;
     opacity: 0.6;
@@ -151,6 +151,152 @@ section{
     cursor: pointer;
 }
 /* END COMPANY AND PARTNERS SECTION */
+
+/* COURSES SECTION STYLE */
+.courses-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.courses-section h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    letter-spacing: -0.002em;
+}
+
+.types{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.types li{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.002em;
+    color: var(--list-color);
+    transition: all ease-in-out 1s;
+}
+
+.types li:hover{
+    color: var(--active-list-color);
+    font-weight: 600;
+    border-bottom: 2px solid var(--active-list-color);
+}
+
+.course-items{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
+    gap: 20px;
+}
+
+/* style the items */
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 9px rgba(153, 153, 151, 0.25);
+    border-radius: 12px;
+}
+
+.item img{
+    width: 100%;
+}
+
+.items-side-space{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 18px;
+}
+
+.desc-button{
+    background: var(--list-buttons-background);
+    border-radius: 7px;
+    border: none;
+    width: 155px;
+    height: 32px;
+    
+    color: var(--list-buttons-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.0024em;
+    margin-bottom: 13px;
+}
+
+.item-desc{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: black;
+}
+
+.item-author{
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
+}
+
+.stars{
+    margin-top: 9px;
+}
+
+.stars i{
+    color: var(--star-color);
+}
+
+.stars .rate{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
+}
+
+.price-divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.price-divider p{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;  
+    color: var(--active-list-color);
+}
+
+.price-divider .buy-button{
+    width: 88px;
+    height: 30px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--active-list-color);
+
+    border: 1px solid var(--active-list-color);
+    border-radius: 6px;
+}
+/* END COURSES SECTION STYLE */
 
 /* TABLET SCREEN SIZES */
 @media only screen and (min-width: 550px){
