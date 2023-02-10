@@ -384,6 +384,121 @@ section{
 }
 /* END Features and Services section */
 
+/* services description style */
+.best-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+}
+
+.happy-girl{
+    margin: 0 auto;
+    width: 340px;
+    height: 380px;
+}
+
+.best-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.best-desc h2{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 62px;
+
+    text-align: center;
+    letter-spacing: -0.002em;
+    color: black;
+}
+
+.best-desc p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+
+    max-width: 555px; 
+    color: var(--list-buttons-color);
+}
+
+.best-desc .best-btn{
+    width: 181px;
+    height: 50px;
+
+    background: rgba(172, 133, 255, 1);
+    border-radius: 12px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    letter-spacing: -0.0024em;
+    color: white;
+    cursor: pointer;
+}
+
+.support-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+    margin-top: 120px;
+}
+
+.support-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.support-desc h2{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.002em;
+    color: black;
+}
+
+.support-desc p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+
+    max-width: 555px;
+    letter-spacing: -0.002em;
+    color: #515151;
+}
+
+.support-desc .supp-btn{
+    width: 178px;
+    height: 50px;
+    background: #5228B6;
+    border-radius: 12px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.0024em;
+    color: #FFFFFF;
+}
+
+.supp-girl{
+    width: 340px;
+    height: 380px;
+    margin: 0 auto;
+}
+/* end services description style */
+
 /* TABLET SCREEN SIZES */
 @media only screen and (min-width: 550px){
     .main-container{
