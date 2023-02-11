@@ -708,6 +708,7 @@ footer{
 footer img{
     width: 198px;
     height: 23px;
+    cursor: pointer;
 }
 
 footer .footer-desc{
@@ -726,10 +727,25 @@ footer .footer-desc{
     justify-content: center;
     gap: 14px;
     text-align: center;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer-list li{
+    cursor: pointer;
 }
 
 .footer-list i{
+    font-size: 15px;
+}
+
+.copyright{
+    font-weight: 400;
     font-size: 12px;
+    line-height: 18px;
+    text-align: center;
 }
 /* END footer section */
 
