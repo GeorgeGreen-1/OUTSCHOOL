@@ -19,10 +19,10 @@
 
             <nav class="nav">
                 <ul>
-                    <li>Courses</li>
-                    <li>Pricing</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+                    <li><a href="#courses-section">Courses</a></li>
+                    <li><a href="#courses-section">Pricing</a></li>
+                    <li><a href="#services-section">About Us</a></li>
+                    <li><a href="#subscribe-section">Contact Us</a></li>
                 </ul>
             </nav>
 
@@ -31,8 +31,9 @@
                 <li><i class="fa-solid fa-cart-flatbed-suitcase"></i> Cart</li>
             </ul>
 
-            <i class="fa-solid fa-bars"></i> <!-- menu icon -->
-
+            <div class="dropdown-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
 
         <section class="main-section" id="main-section">
@@ -320,7 +321,7 @@
     <!-- END COURSES SECTION -->
 
     <!-- Features and Services section -->
-    <section class="services-section">
+    <section class="services-section" id="services-section">
         <div class="services-desc">
             <h1>Our Features and Services</h1>
             <p>
@@ -539,7 +540,7 @@
     <!-- END Latest news -->
 
     <!-- subscribe section -->
-    <section class="subscribe-container">
+    <section class="subscribe-container" id="subscribe-section">
         <img src="./assets/subscribe.png" alt="subscribe image" />
         <div class="subs-item">
             <h2>Subscribe to our newsletter</h2>
@@ -557,13 +558,55 @@
 
     <!-- Footer section -->
     <footer>
-        <img src="./assets/logo.png" alt="logo" class="footer-logo" />
-        <p class="footer-desc">Lorem ipsum dolor sit amet consectetur. Magna integer enim vitae vulputate eu vitae tristique.</p>
-        <ul class="footer-list">
-            <li>General <i class="fa-solid fa-arrow-down"></i></li>
-            <li>Policies <i class="fa-solid fa-arrow-down"></i></li>
-            <li>Get in touch <i class="fa-solid fa-arrow-down"></i></li>
-        </ul>
+        <div class="sitemap">
+            <div class="footer-service">
+                <img src="./assets/logo.png" alt="logo" class="footer-logo" />
+                <p class="footer-desc">
+                    Lorem ipsum dolor sit 
+                    amet consectetur. Magna integer enim vitae
+                    vulputate eu vitae tristique.
+                </p>
+            </div>
+
+            <div class="sitemap-list-divider">
+            <div class="sitemap-item one">
+                <h2 class="sitemap-title">General <i class="fa-solid fa-arrow-down"></i></h2>
+                <ul class="sitemap-list display-none">
+                    <li>About Us</li>
+                    <li>Pricing</li>
+                    <li>Contact Us</li>
+                    <li>Courses</li>
+                </ul>
+            </div>
+
+            <div class="sitemap-item two">
+                <h2 class="sitemap-title">Policies <i class="fa-solid fa-arrow-down"></i></h2>
+                <ul class="sitemap-list display-none">
+                    <li>Security safeguards</li>
+                    <li>Terms of service</li>
+                    <li>Privacy</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+
+            <div class="sitemap-item three">
+                <h2 class="sitemap-title">Get in touch <i class="fa-solid fa-arrow-down"></i></h2>
+                <p class="display-none">
+                    Follow us on social media and stay 
+                    updated with the latest 
+                    information about our services
+                </p>
+                <div class="sitemap-icons display-none">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
         <p class="copyright"><i class="fa-regular fa-copyright"></i> 2022 - @OUTSCHOOL all right deserved</p>
     </footer>
     <!-- END Footer section -->
